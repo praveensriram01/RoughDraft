@@ -1,0 +1,16 @@
+name: Multiple Branches for Pull Request
+
+on:
+  pull_request:
+    branches:
+      - master
+      - feature 1
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull-Request for Master and Feature1
+        run: |
+          echo "Pull request successfully done"
+          echo "Thank U!"
