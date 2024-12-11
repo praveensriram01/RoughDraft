@@ -1,0 +1,15 @@
+name: On Push With Branch Pattern
+
+on:
+  push:
+    branches:
+      -  main
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: linux
+        run: | 
+          echo "Running on linux"
+          echo "Runner OS is $RUNNER_OS"
