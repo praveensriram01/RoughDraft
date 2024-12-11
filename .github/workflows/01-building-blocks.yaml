@@ -2,6 +2,8 @@ name: 01 - Building Blocks
 
 on:
   push:
+    branches:
+      - master
 
 jobs:
   echo-hello:
