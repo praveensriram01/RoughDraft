@@ -2,6 +2,8 @@ name: Run on a Specific Path Change
 
 on:
   push:
+    branches:
+      - master
     paths:
       - "folder/**"
 
