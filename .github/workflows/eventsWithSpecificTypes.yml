@@ -2,13 +2,10 @@ name: Pull request with specific type
 
 on:
   pull_request:
-    types:
-      - opened
-      # - reopened
-
+    types: [opened, review_requested]
 jobs:
-  echo-ubuntu-py:
+  specific_review_requested:
     runs-on: ubuntu-latest
+    if: ${{ github.event.requested_team.name == 'octo-team'}}
     steps:
-      - name: print hello world
-        run: echo "Hello, World!"
+      - run: echo 'A review from octo-team was requested'
