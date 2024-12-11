@@ -12,4 +12,4 @@ jobs:
       - name: path-changing-to-folder
         run: |
           echo "Path was changed to folder as per the request"
-          echo "Thank you for the support"
+          echo "Thank you for the supports"
