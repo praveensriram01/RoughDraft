@@ -1,9 +1,7 @@
 name: On Push With Branch Pattern
 
 on:
-  push:
-    branches:
-      -  master
+  workflow_dispatch:
 
 jobs:
   linux:
